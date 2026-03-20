@@ -3,54 +3,58 @@ import "./PersonalData.css";
 
 const PersonalData = () => {
   return (
-    <section className="personal-data">
-      <div className="container">
+    <section className="hero">
 
-        <h2>Personal Data</h2>
+      <div className="hero-container">
 
-        {/* Basic Info */}
-        <div className="info">
-          <p><strong>Name:</strong> Kashfi Mehbuba</p>
-          <p><strong>Location:</strong> Toronto, ON</p>
-          <p>
-            <strong>Email:</strong>{" "}
-            <a href="mailto:kashfimehbuba71@gmail.com">
-              kashfimehbuba71@gmail.com
-            </a>
+        {/* LEFT SIDE */}
+        <div className="hero-text">
+
+          <p className="tag">Professional Portfolio</p>
+
+          <h1>
+            Hi, I'm <span>Kashfi Mehbuba</span>
+          </h1>
+
+          <p className="subtitle">
+            Software Developer | Computer Programming & Analysis Student
           </p>
-          <p><strong>Phone:</strong> 647-621-1554</p>
-          <p>
-            <strong>LinkedIn:</strong>{" "}
-            <a href="https://www.linkedin.com/in/kashfi-mehbuba-5a8745301/" target="_blank" rel="noreferrer">
-              View Profile
-            </a>
-          </p>
-        </div>
 
-        {/* Summary */}
-        <div className="summary">
-          <h3>Professional Summary</h3>
-          <p>
+          <p className="description">
             Software Development young professional with experience in full-stack,
-            mobile, and backend development. Skilled in building scalable
-            applications and RESTful APIs with strong problem-solving abilities
-            and experience working in team-based software development projects.
+            mobile, and backend development, building scalable applications and
+            RESTful APIs.
           </p>
+
+          <p className="description">
+            Strong problem-solving skills and experience in team-based software
+            development projects.
+          </p>
+
+          <div className="hero-buttons">
+            <a href="mailto:kashfimehbuba71@gmail.ca" className="btn primary">
+              Email Me
+            </a>
+
+            <a
+              href="/resume/Resume_Kashfi_Mehbuba.pdf"
+              target="_blank"
+              rel="noreferrer"
+              className="btn secondary"
+            >
+              View Resume
+            </a>
+          </div>
+
         </div>
 
-        {/* Resume Button */}
-        <div className="resume-btn">
-          <a
-            href="/resume/Resume_Kashfi_Mehbuba.pdf"
-            target="_blank"
-            rel="noreferrer"
-            className="btn"
-          >
-            Download Resume
-          </a>
+        {/* RIGHT SIDE */}
+        <div className="hero-image">
+          <img src="/images/profile.jpeg" alt="Kashfi Mehbuba" />
         </div>
 
       </div>
+
     </section>
   );
 };
