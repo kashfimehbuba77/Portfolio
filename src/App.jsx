@@ -1,6 +1,8 @@
 import PersonalData from "./components/PersonalData";
 import CareerGoal from "./components/CareerGoal";
 import AcademicCredentials from "./components/AcademicCredentials";
+import AcademicWork from "./components/AcademicWork";
+import ProfessionalSummary from "./components/ProfessionalSummary";
 
 function App() {
   return (
@@ -8,6 +10,8 @@ function App() {
       <PersonalData />
       <CareerGoal />
       <AcademicCredentials />
+      <AcademicWork />
+      <ProfessionalSummary />
     </>
   );
 }

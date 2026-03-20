@@ -11,13 +11,13 @@ const AcademicWork = () => {
 
         <h2>Academic Work Experience</h2>
 
-        <p className="section-intro">
+        {/* <p className="section-intro">
           This section will showcase my academic projects, including full-stack
           applications, mobile development, and software engineering work
           completed throughout my program.
-        </p>
+        </p> */}
 
-        {/* Placeholder Cards */}
+        {/* Placeholder Cards
         <div className="work-grid">
 
           <div className="work-card">
@@ -35,7 +35,7 @@ const AcademicWork = () => {
             <p>Description of the project will go here.</p>
           </div>
 
-        </div>
+        </div> */}
 
       </div>
 
