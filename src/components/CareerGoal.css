@@ -1,0 +1,38 @@
+.career-section {
+  padding: 80px 20px;
+  background: #ffffff;
+}
+
+/* Divider */
+.divider {
+  width: 80%;
+  height: 1px;
+  margin: 0 auto 60px;
+  background: linear-gradient(to right, transparent, #d8c7ff, transparent);
+}
+
+.career-container {
+  max-width: 900px;
+  margin: auto;
+  text-align: center;
+}
+
+.career-container h2 {
+  font-size: 2.2rem;
+  color: #2d1b4e;
+  margin-bottom: 20px;
+}
+
+.quote {
+  font-style: italic;
+  color: #7c3aed;
+  margin-bottom: 30px;
+  font-size: 1.05rem;
+}
+
+.career-container p {
+  color: #51456b;
+  line-height: 1.8;
+  margin-bottom: 18px;
+  font-size: 1rem;
+}

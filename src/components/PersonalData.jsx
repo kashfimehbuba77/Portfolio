@@ -4,14 +4,10 @@ import "./PersonalData.css";
 const PersonalData = () => {
   return (
     <section className="hero">
-
       <div className="hero-container">
-
-        {/* LEFT SIDE */}
         <div className="hero-text">
-
           <h1>
-            Hi, I'm <span>Kashfi Mehbuba</span>
+            <span>Kashfi Mehbuba</span>
           </h1>
 
           <p className="subtitle">
@@ -31,7 +27,6 @@ const PersonalData = () => {
 
           <div className="hero-buttons">
 
-            {/* View Resume */}
             <a
               href="/resume/Resume_Kashfi_Mehbuba.pdf"
               target="_blank"
@@ -41,7 +36,6 @@ const PersonalData = () => {
               View Resume
             </a>
 
-            {/* Download Resume */}
             <a
               href="/resume/Resume_Kashfi_Mehbuba.pdf"
               download
@@ -50,7 +44,6 @@ const PersonalData = () => {
               Download Resume
             </a>
 
-            {/* LinkedIn */}
             <a
               href="https://www.linkedin.com/in/kashfi-mehbuba-5a8745301/"
               target="_blank"
@@ -60,25 +53,33 @@ const PersonalData = () => {
               LinkedIn
             </a>
 
-            {/* Email */}
             <a
               href="mailto:kashfimehbuba71@gmail.com"
               className="btn secondary"
             >
               Email Me
             </a>
+          </div>
+        </div>
 
+        <div className="hero-right">
+          <div className="hero-image">
+            <img src="/images/profile.jpeg" alt="Kashfi Mehbuba" />
           </div>
 
+          <div className="contact-info">
+            <p>
+              <strong>Email:</strong> kashfimehbuba71@gmail.com
+            </p>
+            <p>
+              <strong>Phone:</strong> 647-621-1554
+            </p>
+            <p>
+              <strong>Location:</strong> Toronto, ON
+            </p>
+          </div>
         </div>
-
-        {/* RIGHT SIDE */}
-        <div className="hero-image">
-          <img src="/images/profile.jpeg" alt="Kashfi Mehbuba" />
-        </div>
-
       </div>
-
     </section>
   );
 };
