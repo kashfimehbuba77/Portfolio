@@ -10,8 +10,6 @@ const PersonalData = () => {
         {/* LEFT SIDE */}
         <div className="hero-text">
 
-          <p className="tag">Professional Portfolio</p>
-
           <h1>
             Hi, I'm <span>Kashfi Mehbuba</span>
           </h1>
@@ -32,10 +30,8 @@ const PersonalData = () => {
           </p>
 
           <div className="hero-buttons">
-            <a href="mailto:kashfimehbuba71@gmail.ca" className="btn primary">
-              Email Me
-            </a>
 
+            {/* View Resume */}
             <a
               href="/resume/Resume_Kashfi_Mehbuba.pdf"
               target="_blank"
@@ -44,6 +40,34 @@ const PersonalData = () => {
             >
               View Resume
             </a>
+
+            {/* Download Resume */}
+            <a
+              href="/resume/Resume_Kashfi_Mehbuba.pdf"
+              download
+              className="btn secondary"
+            >
+              Download Resume
+            </a>
+
+            {/* LinkedIn */}
+            <a
+              href="https://www.linkedin.com/in/kashfi-mehbuba-5a8745301/"
+              target="_blank"
+              rel="noreferrer"
+              className="btn secondary"
+            >
+              LinkedIn
+            </a>
+
+            {/* Email */}
+            <a
+              href="mailto:kashfimehbuba71@gmail.com"
+              className="btn secondary"
+            >
+              Email Me
+            </a>
+
           </div>
 
         </div>

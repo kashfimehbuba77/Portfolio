@@ -4,7 +4,7 @@
   align-items: center;
   justify-content: center;
   background: #faf7ff;
-  padding: 40px 20px;
+  padding: 60px 20px;
 }
 
 .hero-container {
@@ -13,11 +13,12 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 60px;
+  gap: 80px;
 }
 
 .hero-text {
   flex: 1;
+  max-width: 550px; /* keeps text readable */
 }
 
 .tag {
@@ -27,14 +28,15 @@
   padding: 6px 14px;
   border-radius: 999px;
   font-size: 0.85rem;
-  margin-bottom: 20px;
   font-weight: 600;
+  margin-bottom: 18px;
 }
 
 .hero-text h1 {
   font-size: 3rem;
-  margin: 0 0 10px;
+  margin: 0 0 12px;
   color: #2d1b4e;
+  line-height: 1.2;
 }
 
 .hero-text h1 span {
@@ -44,7 +46,7 @@
 .subtitle {
   font-size: 1.1rem;
   color: #6b5a8e;
-  margin-bottom: 20px;
+  margin-bottom: 18px;
 }
 
 .description {
@@ -55,36 +57,50 @@
 }
 
 .hero-buttons {
-  margin-top: 25px;
+  margin-top: 28px;
   display: flex;
-  gap: 15px;
+  gap: 16px;
 }
+
+/* 🔥 BUTTONS (same style as before) */
 
 .btn {
-  padding: 12px 22px;
-  border-radius: 999px;
-  text-decoration: none;
+  padding: 14px 24px;
+  border-radius: 14px;
   font-weight: 600;
-  transition: 0.3s;
+  font-size: 0.95rem;
+  text-decoration: none;
+  transition: all 0.25s ease;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
 }
 
+/* Primary button */
 .primary {
-  background: #7c3aed;
+  background: #8b5cf6;
   color: white;
+  box-shadow: 0 10px 24px rgba(139, 92, 246, 0.25);
 }
 
 .primary:hover {
-  background: #5b21b6;
+  background: #7c3aed;
+  transform: translateY(-2px);
 }
 
+/* Secondary (outline style like before) */
 .secondary {
-  background: #e9ddff;
-  color: #5b21b6;
+  background: white;
+  color: #7c3aed;
+  border: 1px solid #d9c7ff;
 }
 
 .secondary:hover {
-  background: #d8c7ff;
+  background: #f6f1ff;
+  transform: translateY(-2px);
 }
+
+/* IMAGE */
 
 .hero-image {
   flex: 1;
@@ -97,6 +113,30 @@
   height: 320px;
   object-fit: cover;
   border-radius: 50%;
-  box-shadow: 0 10px 30px rgba(124, 58, 237, 0.2);
+  box-shadow: 0 15px 35px rgba(124, 58, 237, 0.2);
 }
 
+@media (max-width: 768px) {
+  .hero-container {
+    flex-direction: column;
+    text-align: center;
+    gap: 40px;
+  }
+
+  .hero-text {
+    max-width: 100%;
+  }
+
+  .hero-buttons {
+    justify-content: center;
+  }
+
+  .hero-image img {
+    width: 250px;
+    height: 250px;
+  }
+
+  .tag {
+    align-self: center;
+  }
+}
