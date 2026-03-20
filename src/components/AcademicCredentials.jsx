@@ -29,10 +29,12 @@ const AcademicCredentials = () => {
 
           <div className="credential-card">
             <h3>Academic Awards</h3>
-            <ul>
-              <li>Dean’s Honour’s List Recognition</li>
-              <li>CADIT International Student Award</li>
-            </ul>
+            <p className="credential-title">
+              Dean’s Honour’s List Recognition
+            </p>
+            <p className="credential-title">
+              CADIT International Student Award
+            </p>
           </div>
 
           {/* <div className="credential-card">
