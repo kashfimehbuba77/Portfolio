@@ -13,7 +13,7 @@ const CareerGoal = () => {
         <h2>Philosophy & Career Goal</h2>
 
         <p className="quote">
-          “We are the facilitators of our own creative evolution.” – Bill Hicks
+          “The mind is not a vessel to be filled, but a fire to be kindled.” – Aristotle
         </p>
 
         <p>
